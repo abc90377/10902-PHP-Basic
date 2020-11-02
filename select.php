@@ -143,3 +143,65 @@ echo "不是";
 }
 
 </pre>
+
+<h3>switch ... case 選擇</h3>
+<hr>
+<pre>
+switch(case){
+    case "":
+
+    break;
+    case "":
+
+    break;
+    default:
+}
+
+
+</pre>
+<?php
+
+$score=40;
+$level="";
+if($score <0 || $score>100){
+    echo "<span style='color:red'>成績必須在0~100分之內</span>";
+}else if($score>=90){
+    $level= "A";
+}else if($score>=75){
+    $level= "B";
+}else if($score>=60){
+    $level= "C";
+}else{
+    $level= "D";
+}
+
+echo "成績:".$score;
+echo "<br>";
+echo "等級:".$level;
+echo "<br>";
+switch($level){
+ case "A":
+    echo "評價:非常好，請努力保持";
+ break;
+ case "B":
+    echo "評價:可圈可點，但還有進步的空間";
+ break;
+ case "C":
+    echo "評價:一般水平，需要更多的努力";
+ break;
+ case "D":
+    echo "評價:用心不足，請加強";
+ break;
+ default:
+ echo "資料錯誤";
+}
+
+?>
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
